@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: memcached
+  labels:
+    env: test
+spec:
+  securityContext:
+    seccompProfile:
+      type: Localhost
+      localhostProfile: profiles/memcached.json
+      # type: RuntimeDefault
+  containers:
+  - name: memcached
+    image: memcached
+    imagePullPolicy: IfNotPresent
+    # args:
+    # - "-text=just made some syscalls!"
+    securityContext:
+      allowPrivilegeEscalation: false

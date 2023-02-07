@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "nginx": {"syscalls": ["wait4","capset","capget","fstatfs","getdents64","rt_sigreturn"]},
+            "redis": {"syscalls": ["capget","capset","fstatfs","getdents64","getppid","prctl","rt_sigreturn","setgid","setgroups","setuid"]},
+            "memcached": {"syscalls": ["capget","capset","execve","fstatfs","getdents64","getppid","prctl","prlimit64"]},
+            "httpd": {"syscalls": ["capget","capset","fstatfs","getdents64","getppid","rt_sigreturn","setgroups","unlinkat"]},
+            "lighttpd": {"syscalls": ["capget","capset","epoll_create1","fork","fstatfs","getdents64","getppid","rt_sigreturn","epoll_pwait"]},
+            "bind9": {"syscalls": ["capget","capset","epoll_wait","eventfd2","execve","fstatfs","getdents64","getgid","getpgrp","getppid","getrandom","pipe2","pread64","prlimit64","rt_sigreturn","setsockopt","wait4","clone3"]}
+        }
+    ]
+}

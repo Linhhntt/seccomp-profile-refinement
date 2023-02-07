@@ -1,0 +1,44 @@
+{
+    "nginx": {
+        "enable": "true",
+        "image-name": "nginx",
+        "image-url": "nginx",
+        "dependencies": {}
+    },
+    "redis": {
+        "enable": "false",
+        "image-name": "redis",
+        "image-url": "redis"
+    },
+    "memcached": {
+        "enable": "false",
+        "image-name": "memcached",
+        "image-url": "memcached",
+        "category": [
+            "Storage"
+        ],
+        "pull-count": 768466201,
+        "official": true,
+        "options": "",
+        "args": "",
+        "dependencies": {},
+        "id": "26"
+    },
+    "httpd": {
+        "enable": "false",
+        "image-name": "httpd",
+        "image-url": "httpd"
+    },
+    "lighttpd": {
+        "enable": "false",
+        "image-name": "sebp/lighttpd",
+        "image-url": "sebp/lighttpd",
+        "dependencies": {}
+    },
+    "bind9": {
+        "enable": "false",
+        "image-name": "ubuntu/bind9",
+        "image-url": "ubuntu/bind9"
+    }
+
+}

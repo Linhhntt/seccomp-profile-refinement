@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: redis-server
+  labels:
+    env: test
+spec:
+  securityContext:
+    seccompProfile:
+      type: Localhost
+      localhostProfile: profiles/redis-init.seccomp.json
+      # type: RuntimeDefault
+  containers:
+  - name: redis-server
+    image: redis:5.0.7
+    imagePullPolicy: IfNotPresent
+    # args:
+    # - "-text=just made some syscalls!"
+    securityContext:
+      allowPrivilegeEscalation: false
