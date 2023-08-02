@@ -15,7 +15,7 @@
 # BACKGROUND 
 ## Research paper
 We present our approach and the findings of this work in the following research paper:
-**Refining Seccomp Security Profile for Container Hardening** - *Mobisec Conference 2022* & the completed and extended version **Towards Secure Containerized Applications with Seccomp Profile Refinement**, *submitted to Computers & Security Journal 2022*.
+**Refining Seccomp Security Profile for Container Hardening** - *Mobisec Conference 2022* & the completed and extended version **Towards Secure Containerized Applications with Seccomp Profile Refinement**, *submitted & under review in Computers & Security Journal*.
 ## Overall Architecture
 <img src="images/architecture.png" width="100%">
 
@@ -34,10 +34,25 @@ We present our approach and the findings of this work in the following research 
 - Docker version 20.10.17
 - [Sysdig](https://sysdig.com/) version 0.32.0
 
+**Note: if you have any issues related to Sysdig while installing or using, please refer to this [link](https://github.com/nguyenvulong/QA/issues/31) to solve the problems**
+
 # USAGE 
+## 1. Run dynamic analysis
 ```
-    cd ./script
-    ./setup.sh #
+    $ cd ./script
+    $ sudo su 
+    $ ./dynamic.sh 
+```
+**Note:**
+- Please make sure you have the root previlege. You have to run dynamic analysis using root.
+- The default is *Nginx* application. If you want to apply to other applications, let's change the name of application.
+
+The dynamic binaries & libraries will be stored under the directory: ```test-output/{application-name}```
+
+## 2. Run static analysis
+```
+    $ ./setup.sh
+    $ ./static.sh
 ```
 
 
