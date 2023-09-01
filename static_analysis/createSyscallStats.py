@@ -137,6 +137,9 @@ if __name__ == "__main__":
 
         syscallTranslator = syscall.Syscall(rootLogger)
         syscallMap = syscallTranslator.createMap()
+        # for i in syscallMap:
+            # rootLogger.info(i)
+        rootLogger.info(syscallMap)
 
         cfginput = options.cfginput
         binbasepath = options.binpath
@@ -338,6 +341,9 @@ if __name__ == "__main__":
                             temporalMasterSyscalls = outputDict['temporalMaster']
                             temporalWorkerSyscalls = outputDict['temporalWorker']
 
+                            bltemporalMasterSyscalls = outputDict['blTemporalMaster']
+                            bltemporalWorkerSyscalls = outputDict['blTemporalWorker']
+
                             rootLogger.info("///////////////// Initialization phase /////////////////")
                             rootLogger.info("Number of system call:  %d", len(temporalMasterSyscalls))
                             rootLogger.info("WhiteList: %s", temporalMasterSyscalls)
@@ -345,6 +351,16 @@ if __name__ == "__main__":
                             rootLogger.info("///////////////// Serving phase /////////////////")
                             rootLogger.info("Number of system call:  %d", len(temporalWorkerSyscalls))
                             rootLogger.info("WhiteList: %s", temporalWorkerSyscalls)
+
+                            rootLogger.info("///////////////// Blocking /////////////////")
+
+                            rootLogger.info("///////////////// Blocking Initialization phase /////////////////")
+                            rootLogger.info("Number of system call:  %d", len(bltemporalMasterSyscalls))
+                            rootLogger.info("WhiteList: %s", bltemporalMasterSyscalls)
+
+                            rootLogger.info("///////////////// Blocking Serving phase /////////////////")
+                            rootLogger.info("Number of system call:  %d", len(bltemporalWorkerSyscalls))
+                            rootLogger.info("WhiteList: %s", bltemporalWorkerSyscalls)
 
                             sensitiveSyscallStatLine = "{};{};{};{}\n"
                             syscallReductionStatLine = "{};{};{};{};{};{}\n"
