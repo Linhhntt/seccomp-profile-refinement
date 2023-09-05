@@ -1,0 +1,1 @@
+docker image pull nginx:1.17.1
