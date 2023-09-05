@@ -31,8 +31,33 @@ We present our approach and the findings of this work in the following research 
 
 ## Requirements
 - Ubuntu 20.04 64-bit
-- Docker version 20.10.17
-- [Sysdig](https://sysdig.com/) version 0.32.0
+- Docker version 20.10.21
+- [Sysdig](https://sysdig.com/) version 0.33.0
+
+## Sysdig Installation
+```
+    $ sudo -s
+    $ apt install sysdig    #auto install the newest version
+    $ apt install dkms      #install dependencies
+    $ apt install sysdig-dkms    # build sysdig-probe module
+```
+Example: 
+
+<img src="images/sysdig-dkms.png" width="80%">
+
+Then, check the sysdig-probe module under the directory:
+
+<img src="images/check-sysdig-probe-module.png" width="80%">
+
+Install this module to kernel using `insmod`
+
+<img src="images/sysdig-probe-install.png" width="80%">
+
+Check the status of sysdig-probe module to make sure successful installation
+```
+    $ lsmod | grep sysdig
+    =========> sysdig-probe.ko
+```
 
 **Note: if you have any issues related to Sysdig while installing or using, please refer to this [link](https://github.com/nguyenvulong/QA/issues/31) to solve the problems**
 
