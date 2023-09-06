@@ -1,0 +1,176 @@
+INFO:coverage:Extracting system calls for httpd
+INFO:coverage:outputs//httpd.syscall.out doesn't exist, generating first
+INFO:coverage:--->Starting Direct Syscall Extraction
+INFO:coverage:Extracting direct system call invocations
+INFO:coverage:<---Finished Direct Syscall Extraction
+
+INFO:coverage:directSyscallSet: {186}
+INFO:coverage:---> Starting readLibrariesWithLdd
+INFO:coverage:<---Finished readLibrariesWithLdd
+
+INFO:coverage:binaryCfgPath: callgraphs/httpd.apr.svf.new.type.fp.wglobal.cfg
+INFO:coverage:The library call graph exists for: libpcre
+INFO:coverage:self.cfgPath: ./otherCfgs/
+INFO:coverage:fileName in binary call: libgcc_s.so.1
+INFO:coverage:tmpFileName lib: libgcc_s
+INFO:coverage:Adding function starts for libgcc_s.so.1
+INFO:coverage:fileName in binary call: librt.so.1
+INFO:coverage:tmpFileName lib: librt
+INFO:coverage:fileName in binary call: libexpat.so.1.6.2
+INFO:coverage:tmpFileName lib: libexpat
+INFO:coverage:The call graph exists for: libexpat.so.1.6.2
+INFO:coverage:fileName in binary call: libnsl.so.1
+INFO:coverage:tmpFileName lib: libnsl
+INFO:coverage:fileName in binary call: libuuid.so.1.3.0
+INFO:coverage:tmpFileName lib: libuuid
+INFO:coverage:The call graph exists for: libuuid.so.1.3.0
+INFO:coverage:fileName in binary call: grep
+INFO:coverage:Adding function starts for grep
+INFO:coverage:fileName in binary call: libc.so.6
+INFO:coverage:tmpFileName lib: libc
+INFO:coverage:Adding function starts for libc.so.6
+INFO:coverage:fileName in binary call: libapr-1.so.0
+INFO:coverage:tmpFileName lib: libapr
+INFO:coverage:Adding function starts for libapr-1.so.0
+INFO:coverage:fileName in binary call: libnss_files.so.2
+INFO:coverage:tmpFileName lib: libnss_files
+INFO:coverage:fileName in binary call: libaprutil-1.so.0.5.4
+INFO:coverage:tmpFileName lib: libaprutil
+INFO:coverage:Adding function starts for libaprutil-1.so.0.5.4
+INFO:coverage:fileName in binary call: libcrypt.so.1
+INFO:coverage:tmpFileName lib: libcrypt
+INFO:coverage:fileName in binary call: sed
+INFO:coverage:Adding function starts for sed
+INFO:coverage:fileName in binary call: libs.out
+INFO:coverage:Adding function starts for libs.out
+WARNING:coverage:Function extraction for file: libs.out failed!
+INFO:coverage:fileName in binary call: libaprutil-1.so.0
+INFO:coverage:tmpFileName lib: libaprutil
+INFO:coverage:Adding function starts for libaprutil-1.so.0
+INFO:coverage:fileName in binary call: libuuid.so.1
+INFO:coverage:tmpFileName lib: libuuid
+INFO:coverage:The call graph exists for: libuuid.so.1
+INFO:coverage:fileName in binary call: libselinux.so.1
+INFO:coverage:tmpFileName lib: libselinux
+INFO:coverage:Adding function starts for libselinux.so.1
+INFO:coverage:fileName in binary call: rm
+INFO:coverage:Adding function starts for rm
+INFO:coverage:fileName in binary call: libdl.so.2
+INFO:coverage:tmpFileName lib: libdl
+INFO:coverage:fileName in binary call: httpd
+INFO:coverage:Adding function starts for httpd
+INFO:coverage:fileName in binary call: libexpat.so.1
+INFO:coverage:tmpFileName lib: libexpat
+INFO:coverage:The call graph exists for: libexpat.so.1
+INFO:coverage:fileName in binary call: libpcre.so.3.13.3
+INFO:coverage:tmpFileName lib: libpcre
+INFO:coverage:The call graph exists for: libpcre.so.3.13.3
+INFO:coverage:fileName in binary call: libapr-1.so.0.5.2
+INFO:coverage:tmpFileName lib: libapr
+INFO:coverage:Adding function starts for libapr-1.so.0.5.2
+INFO:coverage:fileName in binary call: httpd-foreground
+INFO:coverage:Adding function starts for httpd-foreground
+WARNING:coverage:Function extraction for file: httpd-foreground failed!
+INFO:coverage:fileName in binary call: sh
+INFO:coverage:Adding function starts for sh
+INFO:coverage:fileName in binary call: libpcre.so.3
+INFO:coverage:tmpFileName lib: libpcre
+INFO:coverage:The call graph exists for: libpcre.so.3
+INFO:coverage:fileName in binary call: libpthread.so.0
+INFO:coverage:tmpFileName lib: libpthread
+INFO:coverage:fileName in binary call: mod_auth_basic.so
+INFO:coverage:Adding function starts for mod_auth_basic.so
+INFO:coverage:fileName in binary call: mod_authn_file.so
+INFO:coverage:Adding function starts for mod_authn_file.so
+INFO:coverage:fileName in binary call: mod_authz_user.so
+INFO:coverage:Adding function starts for mod_authz_user.so
+INFO:coverage:fileName in binary call: mod_dir.so
+INFO:coverage:Adding function starts for mod_dir.so
+INFO:coverage:fileName in binary call: mod_version.so
+INFO:coverage:Adding function starts for mod_version.so
+INFO:coverage:fileName in binary call: libc-2.31.so
+INFO:coverage:tmpFileName lib: libc
+INFO:coverage:Adding function starts for libc-2.31.so
+INFO:coverage:fileName in binary call: libnss_files-2.31.so
+INFO:coverage:tmpFileName lib: libnss_files
+INFO:coverage:fileName in binary call: mod_authz_host.so
+INFO:coverage:Adding function starts for mod_authz_host.so
+INFO:coverage:fileName in binary call: mod_env.so
+INFO:coverage:Adding function starts for mod_env.so
+INFO:coverage:fileName in binary call: .cache
+INFO:coverage:Adding function starts for .cache
+WARNING:coverage:Function extraction for file: .cache failed!
+INFO:coverage:fileName in binary call: mod_headers.so
+INFO:coverage:Adding function starts for mod_headers.so
+INFO:coverage:fileName in binary call: ld-2.31.so
+INFO:coverage:Adding function starts for ld-2.31.so
+WARNING:coverage:Function extraction for file: ld-2.31.so failed!
+INFO:coverage:fileName in binary call: mod_mpm_event.so
+INFO:coverage:Adding function starts for mod_mpm_event.so
+INFO:coverage:fileName in binary call: libexpat.so.1.6.12
+INFO:coverage:tmpFileName lib: libexpat
+INFO:coverage:The call graph exists for: libexpat.so.1.6.12
+INFO:coverage:fileName in binary call: libdl-2.31.so
+INFO:coverage:tmpFileName lib: libdl
+INFO:coverage:fileName in binary call: mod_authz_core.so
+INFO:coverage:Adding function starts for mod_authz_core.so
+INFO:coverage:fileName in binary call: libapr-1.so.0.7.0
+INFO:coverage:tmpFileName lib: libapr
+INFO:coverage:Adding function starts for libapr-1.so.0.7.0
+INFO:coverage:fileName in binary call: mod_alias.so
+INFO:coverage:Adding function starts for mod_alias.so
+INFO:coverage:fileName in binary call: mod_access_compat.so
+INFO:coverage:Adding function starts for mod_access_compat.so
+INFO:coverage:fileName in binary call: mod_authn_core.so
+INFO:coverage:Adding function starts for mod_authn_core.so
+INFO:coverage:fileName in binary call: mod_filter.so
+INFO:coverage:Adding function starts for mod_filter.so
+INFO:coverage:fileName in binary call: libcrypt.so.1.1.0
+INFO:coverage:tmpFileName lib: libcrypt
+INFO:coverage:fileName in binary call: mod_reqtimeout.so
+INFO:coverage:Adding function starts for mod_reqtimeout.so
+INFO:coverage:fileName in binary call: libaprutil-1.so.0.6.1
+INFO:coverage:tmpFileName lib: libaprutil
+INFO:coverage:Adding function starts for libaprutil-1.so.0.6.1
+INFO:coverage:fileName in binary call: mod_authz_groupfile.so
+INFO:coverage:Adding function starts for mod_authz_groupfile.so
+INFO:coverage:fileName in binary call: mod_setenvif.so
+INFO:coverage:Adding function starts for mod_setenvif.so
+INFO:coverage:fileName in binary call: mod_autoindex.so
+INFO:coverage:Adding function starts for mod_autoindex.so
+INFO:coverage:fileName in binary call: mod_log_config.so
+INFO:coverage:Adding function starts for mod_log_config.so
+INFO:coverage:fileName in binary call: mod_status.so
+INFO:coverage:Adding function starts for mod_status.so
+INFO:coverage:fileName in binary call: mod_mime.so
+INFO:coverage:Adding function starts for mod_mime.so
+INFO:coverage:fileName in binary call: libpthread-2.31.so
+INFO:coverage:tmpFileName lib: libpthread
+INFO:coverage:fileName in binary call: mod_unixd.so
+INFO:coverage:Adding function starts for mod_unixd.so
+INFO:coverage:allSyscallsFineGrain: {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 35, 38, 39, 40, 41, 42, 44, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55, 56, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 89, 90, 91, 92, 93, 95, 96, 97, 99, 100, 102, 104, 105, 106, 107, 108, 109, 110, 111, 112, 115, 116, 121, 128, 130, 133, 134, 137, 138, 143, 144, 145, 146, 147, 157, 158, 160, 161, 165, 166, 174, 177, 178, 186, 188, 189, 190, 191, 192, 193, 197, 201, 202, 203, 218, 220, 228, 229, 231, 232, 233, 234, 235, 257, 262, 263, 269, 273, 275, 288, 291, 292, 293, 318, 319, 322, 325, 326, 327, 328, 329, 330, 331}
+INFO:coverage:masterstartNodes: 1
+INFO:coverage:accessibleFuncsLen: 389
+INFO:coverage:workerstartNodes: 1
+INFO:coverage:accessibleFuncsLen: 337
+INFO:coverage:Finished extracting temporal worker system calls with len: 156 and 141 for httpd
+INFO:coverage:outputs//httpd.syscall.out exists, creating stats
+INFO:coverage:///////////////// Initialization phase /////////////////
+INFO:coverage:Number of system call:  152
+INFO:coverage:WhiteList: {'sched_yield', 'chown', 'clock_gettime', 'set_tid_address', 'accept4', 'link', 'poll', 'socket', 'bind', 'setsockopt', 'gettid', 'sendfile', 'access', 'ioctl', 'fsetxattr', 'fchmod', 'mount', 'dup', 'rt_sigaction', 'creat', 'exit_group', 'lseek', 'recvfrom', 'readlink', 'copy_file_range', 'pkey_free', 'arch_prctl', 'readv', 'sched_setscheduler', 'fcntl', 'semop', 'getuid', 'sched_getparam', 'lsetxattr', 'setpgid', 'pkey_mprotect', 'select', 'pkey_alloc', 'splice', 'statfs', 'getpeername', 'sysinfo', 'getcwd', 'times', 'sendto', 'mknod', 'chroot', 'set_robust_list', 'memfd_create', 'read', 'setgroups', 'faccessat', 'removexattr', 'mkdir', 'rename', 'getsockopt', 'getpgid', 'setitimer', 'setgid', 'sched_get_priority_max', 'time', 'epoll_wait', 'tgkill', 'stat', 'epoll_ctl', 'clock_getres', 'prctl', 'rmdir', 'recvmsg', 'getgroups', 'dup2', 'getdents', 'setrlimit', 'flock', 'getxattr', 'ftruncate', 'writev', 'getsockname', 'pipe', 'chdir', 'getegid', 'setxattr', 'unlinkat', 'execveat', 'execve', 'shmctl', 'connect', 'mremap', 'setsid', 'exit', 'umask', 'vfork', 'rt_sigreturn', 'chmod', 'fgetxattr', 'shutdown', 'sched_setaffinity', 'clone', 'shmdt', 'pwritev2', 'listen', 'fstat', 'rt_sigprocmask', 'mprotect', 'semctl', 'getrandom', 'munmap', 'epoll_create1', 'uselib', 'wait4', 'nanosleep', 'gettimeofday', 'getgid', 'openat', 'shmat', 'fchown', 'kill', 'utimes', 'brk', 'rt_sigsuspend', 'rt_sigtimedwait', 'getpid', 'fsync', 'mmap', 'newfstatat', 'close', 'getrlimit', 'getppid', 'getpgrp', 'fchdir', 'lstat', 'geteuid', 'madvise', 'open', 'shmget', 'fdatasync', 'sched_get_priority_min', 'mlock2', 'futex', 'dup3', 'setuid', 'lgetxattr', 'sched_getscheduler', 'sendmsg', 'uname', 'semget', 'fstatfs', 'pipe2', 'preadv2', 'unlink', 'semtimedop', 'write'}
+INFO:coverage:///////////////// Serving phase /////////////////
+INFO:coverage:Number of system call:  137
+INFO:coverage:WhiteList: {'sched_yield', 'chown', 'clock_gettime', 'set_tid_address', 'accept4', 'link', 'poll', 'socket', 'setsockopt', 'gettid', 'sendfile', 'access', 'ioctl', 'fsetxattr', 'fchmod', 'mount', 'rt_sigaction', 'creat', 'exit_group', 'lseek', 'recvfrom', 'readlink', 'copy_file_range', 'pkey_free', 'arch_prctl', 'readv', 'sched_setscheduler', 'fcntl', 'semop', 'getuid', 'sched_getparam', 'lsetxattr', 'setpgid', 'pkey_mprotect', 'select', 'pkey_alloc', 'splice', 'statfs', 'getpeername', 'sysinfo', 'getcwd', 'times', 'sendto', 'mknod', 'chroot', 'set_robust_list', 'memfd_create', 'read', 'setgroups', 'faccessat', 'removexattr', 'mkdir', 'rename', 'getsockopt', 'setitimer', 'sched_get_priority_max', 'time', 'epoll_wait', 'tgkill', 'stat', 'epoll_ctl', 'clock_getres', 'rmdir', 'recvmsg', 'getgroups', 'getdents', 'getxattr', 'flock', 'ftruncate', 'writev', 'getsockname', 'pipe', 'getegid', 'setxattr', 'unlinkat', 'execveat', 'shmctl', 'connect', 'exit', 'umask', 'vfork', 'rt_sigreturn', 'chmod', 'fgetxattr', 'shutdown', 'sched_setaffinity', 'clone', 'shmdt', 'pwritev2', 'fstat', 'rt_sigprocmask', 'mprotect', 'semctl', 'getrandom', 'munmap', 'epoll_create1', 'uselib', 'wait4', 'nanosleep', 'gettimeofday', 'getgid', 'openat', 'shmat', 'fchown', 'kill', 'utimes', 'brk', 'rt_sigsuspend', 'rt_sigtimedwait', 'getpid', 'fsync', 'mmap', 'newfstatat', 'close', 'getrlimit', 'getppid', 'fchdir', 'lstat', 'geteuid', 'madvise', 'open', 'shmget', 'fdatasync', 'sched_get_priority_min', 'mlock2', 'futex', 'lgetxattr', 'sched_getscheduler', 'sendmsg', 'uname', 'semget', 'fstatfs', 'pipe2', 'preadv2', 'unlink', 'semtimedop', 'write'}
+INFO:coverage:///////////////// Blocking /////////////////
+INFO:coverage:///////////////// Blocking Initialization phase /////////////////
+INFO:coverage:Number of system call:  168
+INFO:coverage:WhiteList: {'init_module', 'set_thread_area', 'sync_file_range', 'inotify_add_watch', 'epoll_pwait', 'get_mempolicy', 'renameat2', 'perf_event_open', 'mq_unlink', 'restart_syscall', 'get_robust_list', 'msgget', 'vmsplice', 'keyctl', 'readlinkat', 'truncate', 'linkat', 'msgctl', 'timer_getoverrun', 'syslog', 'ioprio_get', 'rt_sigpending', 'get_thread_area', 'getresuid', 'epoll_create', 'pwritev', 'move_pages', 'sched_setparam', 'setfsgid', 'remap_file_pages', 'setresgid', 'setdomainname', 'rt_sigqueueinfo', 'mbind', 'eventfd2', 'capset', 'process_vm_writev', 'fremovexattr', 'pwrite64', 'swapoff', 'process_vm_readv', 'modify_ldt', 'recvmmsg', 'timer_delete', 'kexec_file_load', 'setfsuid', 'getsid', 'preadv', 'pivot_root', 'symlinkat', 'inotify_rm_watch', 'request_key', 'ppoll', 'getpriority', 'listxattr', 'inotify_init', 'futimesat', 'signalfd4', 'open_by_handle_at', 'sched_getaffinity', 'fork', 'renameat', 'finit_module', 'symlink', 'io_setup', 'setreuid', 'timerfd_gettime', 'sysfs', 'sendmmsg', 'clock_adjtime', 'getrusage', 'io_destroy', 'sched_rr_get_interval', 'quotactl', 'mlock', 'unshare', 'pread64', 'vhangup', 'iopl', 'llistxattr', 'migrate_pages', 'sched_setattr', 'ptrace', 'io_submit', 'mq_open', 'alarm', 'statx', 'accept', 'getresgid', 'bpf', 'setregid', 'getitimer', 'clock_nanosleep', 'mq_timedreceive', 'rseq', 'adjtimex', 'capget', 'kcmp', 'setpriority', 'personality', 'sync', 'mknodat', 'timerfd_settime', 'sethostname', 'userfaultfd', 'fallocate', 'munlock', 'ioperm', 'ioprio_set', 'fchownat', 'fchmodat', 'mq_notify', 'msync', 'kexec_load', 'delete_module', 'io_getevents', 'settimeofday', 'fadvise64', 'setns', 'pselect6', 'timerfd_create', 'eventfd', 'readahead', 'add_key', 'io_cancel', 'getdents64', 'ustat', 'fanotify_mark', 'getcpu', 'munlockall', 'reboot', 'mkdirat', 'tkill', 'membarrier', 'flistxattr', 'utimensat', 'waitid', 'mincore', 'msgrcv', 'msgsnd', 'setresuid', 'socketpair', 'clock_settime', 'set_mempolicy', 'mq_getsetattr', 'tee', 'rt_tgsigqueueinfo', 'inotify_init1', 'syncfs', 'name_to_handle_at', 'timer_create', 'mlockall', 'fanotify_init', 'sched_getattr', 'lchown', 'io_pgetevents', 'timer_settime', 'signalfd', 'mq_timedsend', 'pause', 'lremovexattr', 'swapon', 'acct', 'utime', 'seccomp', 'prlimit64', 'sigaltstack', 'timer_gettime'}
+INFO:coverage:///////////////// Blocking Serving phase /////////////////
+INFO:coverage:Number of system call:  183
+INFO:coverage:WhiteList: {'init_module', 'set_thread_area', 'sync_file_range', 'inotify_add_watch', 'epoll_pwait', 'get_mempolicy', 'renameat2', 'perf_event_open', 'mq_unlink', 'restart_syscall', 'get_robust_list', 'msgget', 'vmsplice', 'keyctl', 'readlinkat', 'truncate', 'linkat', 'msgctl', 'timer_getoverrun', 'bind', 'syslog', 'ioprio_get', 'rt_sigpending', 'get_thread_area', 'getresuid', 'epoll_create', 'pwritev', 'move_pages', 'sched_setparam', 'setfsgid', 'remap_file_pages', 'setresgid', 'setdomainname', 'rt_sigqueueinfo', 'mbind', 'eventfd2', 'capset', 'process_vm_writev', 'fremovexattr', 'dup', 'pwrite64', 'swapoff', 'process_vm_readv', 'modify_ldt', 'recvmmsg', 'timer_delete', 'kexec_file_load', 'setfsuid', 'getsid', 'preadv', 'pivot_root', 'symlinkat', 'inotify_rm_watch', 'request_key', 'ppoll', 'getpriority', 'listxattr', 'inotify_init', 'futimesat', 'signalfd4', 'open_by_handle_at', 'sched_getaffinity', 'fork', 'renameat', 'finit_module', 'symlink', 'io_setup', 'setreuid', 'timerfd_gettime', 'sysfs', 'sendmmsg', 'clock_adjtime', 'getrusage', 'io_destroy', 'sched_rr_get_interval', 'quotactl', 'mlock', 'unshare', 'pread64', 'vhangup', 'iopl', 'llistxattr', 'migrate_pages', 'sched_setattr', 'ptrace', 'io_submit', 'mq_open', 'alarm', 'statx', 'getpgid', 'accept', 'getresgid', 'setgid', 'bpf', 'setregid', 'getitimer', 'clock_nanosleep', 'mq_timedreceive', 'rseq', 'adjtimex', 'prctl', 'capget', 'kcmp', 'setpriority', 'dup2', 'setrlimit', 'personality', 'sync', 'mknodat', 'timerfd_settime', 'sethostname', 'userfaultfd', 'fallocate', 'chdir', 'munlock', 'ioperm', 'ioprio_set', 'fchownat', 'execve', 'mremap', 'setsid', 'fchmodat', 'mq_notify', 'msync', 'kexec_load', 'delete_module', 'io_getevents', 'settimeofday', 'fadvise64', 'setns', 'pselect6', 'timerfd_create', 'eventfd', 'readahead', 'add_key', 'io_cancel', 'listen', 'getdents64', 'ustat', 'fanotify_mark', 'getcpu', 'munlockall', 'reboot', 'mkdirat', 'tkill', 'membarrier', 'flistxattr', 'utimensat', 'waitid', 'mincore', 'msgrcv', 'msgsnd', 'setresuid', 'socketpair', 'clock_settime', 'set_mempolicy', 'mq_getsetattr', 'tee', 'rt_tgsigqueueinfo', 'getpgrp', 'inotify_init1', 'syncfs', 'name_to_handle_at', 'timer_create', 'mlockall', 'fanotify_init', 'sched_getattr', 'lchown', 'io_pgetevents', 'timer_settime', 'signalfd', 'dup3', 'mq_timedsend', 'pause', 'setuid', 'swapon', 'lremovexattr', 'acct', 'utime', 'seccomp', 'prlimit64', 'sigaltstack', 'timer_gettime'}
+INFO:coverage:////////////////////////////////////////////appName: httpd libdebloating: 0 temporal: 137 ////////////////////////////////////
+INFO:coverage:App lighttpd is disabled, skipping...
+INFO:coverage:App nginx is disabled, skipping...
+INFO:coverage:App memcached is disabled, skipping...
+INFO:coverage:App redis-server is disabled, skipping...
+INFO:coverage:App bind is disabled, skipping...
