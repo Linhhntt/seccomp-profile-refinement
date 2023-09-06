@@ -9,7 +9,7 @@ APP_PART=$(echo $APP | cut -f1 -d"." | cut -f1 -d"-")
 
 #dynamic_analysis
 cd ../dynamic_analysis
-cd example-output
+cd test-output
 DYNOUT_DIR=$(pwd)
 
 #copy binaries from dynamic analysis to static analysis

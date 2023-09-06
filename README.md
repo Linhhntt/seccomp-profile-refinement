@@ -9,8 +9,8 @@
 # TABLE OF CONTENTS
 - [Background](#background)
 - [Setup](#setup)
-- Usage
-- Experiment results
+- [Usage](#usage)
+- [Experiment results](#experiment-results)
 
 # BACKGROUND 
 ## Research paper
@@ -79,6 +79,8 @@ The dynamic binaries & libraries will be stored under the directory: ```test-out
     $ ./setup.sh
     $ ./static.sh
 ```
+
+# EXPERIMENT RESULTS
 
 
 

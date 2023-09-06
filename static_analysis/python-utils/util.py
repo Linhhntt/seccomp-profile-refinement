@@ -234,6 +234,7 @@ def readLibrariesWithLdd(elfPath):
 
     # Read all imports and exports per each library
     for lib in out.split('\n\t'):
+        print("libname: ", lib)
         # Exclude a virtual dynamically linked shared object(VDSO) and a dynamic loader(DL)
         if 'linux-vdso' not in lib and 'ld-linux' not in lib:
             try:
@@ -245,7 +246,7 @@ def readLibrariesWithLdd(elfPath):
             except:
                 logging.critical("Parsing Error with %s outcome!" % ("ldd"))
                 logging.critical("Trying to extract libraries with objdump!")
-                loadings = readLibrariesWithObjdump(elfPath)
+                # loadings = readLibrariesWithObjdump(elfPath)
 
     return loadings
 
