@@ -9,10 +9,13 @@ class Sysdig(MonitoringTool):
     """
     def __init__(self, logger, psListPath=None):
         MonitoringTool.__init__(self, logger)
-        self.cleanSysdigState()
+        if self.checkSysdigState:
+            self.cleanSysdigState()
+        self.initSysdigState()
         fd, self.tmpFile = tempfile.mkstemp(prefix="confine-sysdig_")
         os.close(fd)
         self.logger.debug("Created sysdig trace file: " + self.tmpFile)
+        
 
     def cleanSysdigState(self):
         cmd = ["sudo", "rmmod", "sysdig_probe"]
@@ -20,6 +23,25 @@ class Sysdig(MonitoringTool):
         self.proc = subprocess.Popen(cmd)
         if ( not self.proc ):
             self.logger.error("%s failed", cmd)
+            return False
+        return True
+
+    def initSysdigState(self):
+        cmd = ["sudo", "insmod", "/lib/modules/5.8.0-050800-generic/updates/dkms/sysdig-probe.ko"]
+        self.logger.debug("Running command:" + str(cmd))
+        self.proc = subprocess.Popen(cmd)
+        if ( not self.proc ):
+            self.logger.error("%s failed", cmd)
+            return False
+        return True
+    
+    def checkSysdigState(self):
+        cmd = ["sudo", "lsmod", "|", "grep", "sysdig_probe"]
+        self.logger.debug("Running command:" + str(cmd))
+        status = subprocess.Popen(cmd)
+        print("pro status: ", status)
+        if ( not status ):
+            # self.logger.error("%s failed", cmd)
             return False
         return True
 

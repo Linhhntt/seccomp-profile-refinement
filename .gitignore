@@ -7,4 +7,5 @@ seccomp/__pycache__/
 dynamic_analysis/test-output/
 seccomp/test-output/
 static_analysis/test-results/
+static_analysis/application-sourcecodes/
 

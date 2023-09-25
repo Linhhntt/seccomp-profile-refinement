@@ -1,14 +1,16 @@
 {
     "nginx": {
-        "enable": "true",
+        "enable": "false",
         "image-name": "nginx",
-        "image-url": "nginx",
-        "dependencies": {}
+        "image-url": "nginx:1.20.2",
+        "dependencies": {},
+        "tag": "1.20.2"
     },
     "redis": {
-        "enable": "false",
-        "image-name": "redis",
-        "image-url": "redis"
+        "enable": "true",
+        "image-name": "redis-3.2.5",
+        "image-url": "redis:3.2.5",
+        "tag": "3.2.5"
     },
     "memcached": {
         "enable": "false",
