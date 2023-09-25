@@ -9,13 +9,13 @@
 # TABLE OF CONTENTS
 - [Background](#background)
 - [Setup](#setup)
-- Usage
-- Experiment results
+- [Usage](#usage)
+- [Experiment results]()
 
 # BACKGROUND 
 ## Research paper
 We present our approach and the findings of this work in the following research paper:
-**Refining Seccomp Security Profile for Container Hardening** - *Mobisec Conference 2022* & the completed and extended version **Towards Secure Containerized Applications with Seccomp Profile Refinement**, *submitted & under review in Computers & Security Journal*.
+**Refining Seccomp Security Profile for Container Hardening** - *Mobisec Conference 2022* & the completed and extended version **Towards Secure Containerized Applications with Seccomp Profile Refinement**, *1st Reviewed in Computers & Security Journal*.
 ## Overall Architecture
 <img src="images/architecture.png" width="100%">
 
@@ -79,6 +79,24 @@ The dynamic binaries & libraries will be stored under the directory: ```test-out
     $ ./setup.sh
     $ ./static.sh
 ```
+**Note:**
+- For static analysis, we need to have application's bitcode file as the input of this process
+
+# EXPERIMENT RESULTS
+
+Please refer to the paper to understand details of our experiment.
+## 1. System call filtering
+<img src="images/table_4.PNG" width="100%">
+
+## 2. VERSION COMPARISION
+- Nginx application: 
+
+<img src="images/table_7.PNG" width="100%">
+
+- Redis-server application: 
+
+<img src="images/table_8.PNG" width="100%">
+
 
 
 
