@@ -138,11 +138,13 @@ class ContainerProfiler():
         self.logger.info("--->Starting MONITOR phase:")
         while ( sysdigRunCount <= sysdigTotalRunCount ):
             myMonitor = processMonitorFactory.Factory(self.logger, self.monitoringTool, psListFilePath=self.binLibList)
+            # subprocess.run(["insmod", "/lib/modules/5.8.0-050800-generic/updates/dkms/sysdig-probe.ko"])
             #mySysdig = sysdig.Sysdig(self.logger)
             self.logger.debug("Trying to kill and delete container which might not be running in loop... Not a problem if returns error")
             str(myContainer.kill())
             str(myContainer.delete())
             self.logger.info("Running %s multiple times. Run count: %d from total: %d",myMonitor, sysdigRunCount, sysdigTotalRunCount)
+
             sysdigRunCount += 1
             #sysdigResult = mySysdig.runSysdigWithDuration(logSleepTime)
             monitorResult = myMonitor.runWithDuration(logSleepTime)

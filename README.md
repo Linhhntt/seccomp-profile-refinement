@@ -61,6 +61,14 @@ Check the status of sysdig-probe module to make sure successful installation
 
 **Note: if you have any issues related to Sysdig while installing or using, please refer to this [link](https://github.com/nguyenvulong/QA/issues/31) to solve the problems**
 
+## Bitcode Generation
+- Source codes are compressed under .tar.gz files using command:
+```
+    $ tar -czvf $SOURCE_CODE_FOLDER $SOURCE_CODE_FOLDER.tar.gz
+```
+- Decompress using `tar -zvf $SOURCE_CODE_FOLDER.tar.gz`
+- Move the `.0.5.precodegen.bc` to the bitcodes folder for the next steps
+
 # USAGE 
 ## 1. Run dynamic analysis
 ```

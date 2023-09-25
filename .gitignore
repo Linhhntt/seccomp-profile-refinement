@@ -1,0 +1,11 @@
+dynamic_analysis/__pycache__/
+dynamic_analysis/python-utils/__pycache__/
+dynamic_analysis/*.log
+seccomp/__pycache__/
+
+# Test Results
+dynamic_analysis/test-output/
+seccomp/test-output/
+static_analysis/test-results/
+static_analysis/application-sourcecodes/
+

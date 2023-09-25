@@ -51,7 +51,7 @@ class Piecewise:
             self.logger.info("extraction direct syscall for %s", filePath)
             binAnalysis = binaryAnalysis.BinaryAnalysis(filePath, self.logger)
             syscallSet, successCount, failCount = binAnalysis.extractDirectSyscalls()
-            self.logger.info("Successfull direct syscalls: %d list: %s, Failed direct syscalls: %d", successCount, str(syscallSet), failCount)
+            # self.logger.info("Successfull direct syscalls: %d list: %s, Failed direct syscalls: %d", successCount, str(syscallSet), failCount)
             #self.logger.warning("Failed syscalls: %d", failCount)
             finalSyscallSet.update(syscallSet)
         return finalSyscallSet
