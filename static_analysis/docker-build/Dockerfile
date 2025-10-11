@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:24.04
 
 ENV NUM_CORES 8
 ENV ROOT /debloating-vol
